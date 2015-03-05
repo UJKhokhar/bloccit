@@ -1,3 +1,7 @@
 <h1>Summary#show</h1>
-<p><%= @summary.description %></p>
+<% if @summary %>
+  <p><%= @summary.description %></p>
+<% else %>
+  <p>No Summary </p>
+<% end %>
 <%= debug @summary %>

@@ -9,7 +9,7 @@ class SummariesController < ApplicationController
     @summary = @post.build_summary(summary_params)
     if @summary.save
       flash[:notice]
-      redirect_to [@post,@summary]
+      redirect_to post_summary_path(@post.id) 
     else
       flash[:error] = "There was an error saving your summary. Please try again."
       render :new
@@ -18,7 +18,7 @@ class SummariesController < ApplicationController
 
   def show
     @post = Post.find(params[:post_id])
-    @summary = Summary.find(params[:id])
+    @summary = @post.summary
   end
 
   private
