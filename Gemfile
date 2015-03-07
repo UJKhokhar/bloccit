@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-#will_paginate for pagination
-gem 'will_paginate', '~> 3.0.5'
+# #will_paginate for pagination
+# gem 'will_paginate', '~> 3.0.5'
 
 #Fog for cloud services
 gem 'fog'
