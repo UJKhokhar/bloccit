@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'newrelic_rpm'
+
 # rspec for testing
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
