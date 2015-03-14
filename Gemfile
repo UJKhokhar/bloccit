@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'puma'
+
 gem 'newrelic_rpm'
 
 # rspec for testing
